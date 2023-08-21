@@ -29,14 +29,1027 @@
 
   <body>
     <header>
-      <load ="partials/header.html" />
+      <div class="sectionheader" id="header">
+  <div class="container header-container">
+    <div data-aos="fade-right">
+      <a class="logo-header" href="./index.html">
+        <img src="/img/logo.svg" alt="logo" class="svg-header" />
+        <p class="header-logo-text">thewatchspot</p>
+      </a>
+    </div>
+    <ul class="header-list" data-aos="fade-right">
+      <li>
+        <a class="header-text" href="#about-us">About us</a>
+      </li>
+      <li>
+        <a class="header-text" href="#catalog">Catalog</a>
+      </li>
+      <li>
+        <a class="header-text" href="#sale">sale</a>
+      </li>
+    </ul>
+    <div class="aos-container header-actions-container" data-aos="fade-left">
+      <button aria-label="day and night switch" class="mode-btn" type="button">
+        <span class="btn-circle"></span>
+      </button>
+      <div class="aos-container header-btn-container" data-aos="fade-left"><a class="btn-header"
+          href="tel:+380684439426">+380 (68) 443-94-26</a></div>
+    </div>
+  </div>
+  <div class="container header-container-mob">
+    <div class="logo-header">
+      <img src="/img/logo.svg" alt="logo" class="svg-header" />
+      <p class="header-logo-text">thewatchspot</p>
+    </div>
+
+    <div class="header-actions-container">
+      <button aria-label="day and night switch" class="mode-btn-mobile" type="button">
+        <span class="btn-circle-mobile"></span>
+      </button>
+    </div>
+    <button aria-label="modal menu burger" class="btn-menu" type="button" aria-expanded="false">
+      <svg class="svg-menu" width="20" height="14">
+        <use href="/img/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+</div>
     </header>
     <main>
-      <load ="partials/hero.html" />
-      <load ="partials/about_us.html" />
-      <load ="partials/catalog.html" />
-      <load ="partials/new_watches.html" />
-      <load ="partials/sale.html" />
+      <section class="section hero">
+  <div class="container">
+    <div class="page-wrap">
+      <div class="hero-wrap">
+        <h1 class="hero-title" data-aos="fade-right">
+          Welcome to our collection of premium watches
+        </h1>
+      </div>
+      <div class="swiper-page-wrap">
+        <div class="swiper mySwiper" data-aos="fade-right">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide hero-img">
+              <picture>
+                <source srcset="
+                    /img/hero/mobile/tablet1-1x.png 1x,
+                    /img/hero/mobile/tablet1-2x.png 2x
+                  " media="(min-width: 768px)" />
+                <source srcset="
+                    /img/hero/mobile/watches1-1x.png 1x,
+                    /img/hero/mobile/watches1-2x.png 2x
+                  " media="(max-width: 767px)" />
+                <img class="hero-foto" src="/img/hero/mobile/watches1-1x.png" alt="watches" width="226" height="190" />
+              </picture>
+            </div>
+            <div class="swiper-slide hero-img">
+              <picture>
+                <source srcset="
+                    /img/hero/mobile/tablet2-1x.png 1x,
+                    /img/hero/mobile/tablet2-2x.png 2x
+                  " media="(min-width: 768px)" />
+                <source srcset="
+                    /img/hero/mobile/watches2-1x.png 1x,
+                    /img/hero/mobile/watches2-2x.png 2x
+                  " media="(max-width: 767px)" />
+                <img class="hero-foto" src="/img/hero/mobile/watches2-1x.png" alt="watches" width="226" height="190" />
+              </picture>
+            </div>
+            <div class="swiper-slide hero-img">
+              <picture>
+                <source srcset="
+                    /img/hero/mobile/tablet3-1x.png 1x,
+                    /img/hero/mobile/tablet3-2x.png 2x
+                  " media="(min-width: 768px)" />
+                <source srcset="
+                    /img/hero/mobile/watches3-1x.png 1x,
+                    /img/hero/mobile/watches3-2x.png 2x
+                  " media="(max-width: 767px)" />
+                <img class="hero-foto" src="/img/hero/mobile/watches3-1x.png" alt="watches" width="226" height="190" />
+              </picture>
+            </div>
+            <div class="swiper-slide hero-img">
+              <picture>
+                <source srcset="
+                    /img/hero/mobile/tablet4-1x.png 1x,
+                    /img/hero/mobile/tablet4-2x.png 2x
+                  " media="(min-width: 768px)" />
+                <source srcset="
+                    /img/hero/mobile/watches4-1x.png 1x,
+                    /img/hero/mobile/watches4-2x.png 2x
+                  " media="(max-width: 767px)" />
+                <img class="hero-foto" src="/img/hero/mobile/watches4-1x.png" alt="watches" width="226" height="190" />
+              </picture>
+            </div>
+            <div class="swiper-slide hero-img">
+              <picture>
+                <source srcset="
+                    /img/hero/mobile/tablet5-1x.png 1x,
+                    /img/hero/mobile/tablet5-2x.png 2x
+                  " media="(min-width: 768px)" />
+                <source srcset="
+                    /img/hero/mobile/watches5-1x.png 1x,
+                    /img/hero/mobile/watches5-2x.png 2x
+                  " media="(max-width: 767px)" />
+                <img class="hero-foto" src="/img/hero/mobile/watches5-1x.png" alt="watches" width="226" height="190" />
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-buttons" data-aos="fade-right" data-aos-duration="1500">
+          <div class="button-prev">
+            <button aria-label="previous picture" class="hero-btn" type="button">
+              <svg class="hero-icon" width="18" height="18">
+                <use href="/img/sprite.svg#icon-prev"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="button-next">
+            <button aria-label="next picture" class="hero-btn" type="button">
+              <svg class="hero-icon icon" width="18" height="18">
+                <use class="" href="/img/sprite.svg#icon-prev"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="hero-wpap-text" data-aos="fade-left">
+        <p class="hero-text">
+          Our watches are not just timepieces, but also an expression of your
+          personality and lifestyle. From classic designs to modern ones, we
+          have a watch to suit every taste and occasion.
+        </p>
+      </div>
+      <div class="hero-wrap-img" data-aos="fade-left" data-aos-duration="1500">
+        <picture>
+          <source srcset="/img/hero/desctop-1x.jpg 1x, /img/hero/desctop-2x.jpg 2x" media="(min-width: 1280px)" />
+          <source srcset="/img/hero/tablet-1x.jpg 1x, /img/hero/tablet-2x.jpg 2x" media="(min-width: 768px)" />
+          <source srcset="/img/hero/mobile-1x.jpg 1x, /img/hero/mobile-2x.jpg 2x" media="(max-width: 767px)" />
+          <img class="hero-watches-img" src="/img/hero/tablet-1x.jpg" alt="watches" width="345" height="410" />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section bg mode-bg" id="about-us">
+  <div class="container">
+    <div class="about-section">
+      <h2 class="about-title title mode-title" data-aos="fade-down">
+        About us
+      </h2>
+      <ul class="about-list" data-aos="fade-left">
+        <li class="about-item">
+          <p class="about-text mode-text">
+            Welcome to our premium watch collection, where luxury and style meet
+            functionality and precision. Our selection of timepieces embodies
+            the very best in Swiss craftsmanship and engineering, ensuring that
+            you'll always have a reliable and stylish accessory on your wrist.
+          </p>
+        </li>
+        <li class="about-item" data-aos="fade-left">
+          <p class="about-text mode-text">
+            At our premium watch collection, we believe that a watch is more
+            than just a timekeeping device – it's a statement piece that
+            reflects your personality and style. So why settle for anything less
+            than the best? Browse our collection today and discover the perfect
+            watch for you.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="about-wrap" data-aos="fade-left">
+      <img
+        class="about-img"
+        src="/img/about_us/watchspot.gif"
+        alt="watch"
+        width="336"
+        height="365"
+      />
+    </div>
+  </div>
+</section>
+
+      <section id="catalog" class="section catalog mode-bg">
+  <div class="container">
+    <h2 class="catalog-title title mode-title" data-aos="fade-down">Catalog</h2>
+    <ul class="catalog-list">
+      <li class="catalog-item">
+        <div class="catalog-thumb" data-aos="fade-right">
+          <svg class="catalog-heart">
+            <use href="./img/sprite.svg#icon-heart"></use>
+          </svg>
+          <img
+            class="catalog-img"
+            srcset="/img/catalog/watch-1@2x.png 2x"
+            src="/img/catalog/watch-1.png"
+            alt="watch image"
+            width="275"
+            height="274"
+          />
+          <div class="catalog-overlay">
+            <h3 class="catalog-overlay-title">Description</h3>
+            <p class="catalog-overlay-text">
+              Richly detailed with an understated design - the Police Men’s
+              Greenlane watch.
+            </p>
+            <h3 class="catalog-overlay-title">Details & Features</h3>
+            <ul class="catalog-overlay-text">
+              <li>Gender: man</li>
+              <li>Size: 46x54.5mm</li>
+              <li>Case Colour: Steel Band</li>
+              <li>Material: Metal Case</li>
+              <li>Material: Metal</li>
+              <li>Features: Multifunction</li>
+              <li>Water Resistant: 5 (ATM)</li>
+              <li>Band Colour: Steel</li>
+            </ul>
+          </div>
+        </div>
+        <div class="catalog-content" data-aos="fade-up">
+          <p class="catalog-description mode-text">
+            Tube Watch S42 Date Steel With Black Case
+          </p>
+          <span class="catalog-price mode-semi-tr">€395</span>
+        </div>
+      </li>
+      <li class="catalog-item">
+        <div class="catalog-thumb" data-aos="fade-right">
+          <svg class="catalog-heart">
+            <use href="./img/sprite.svg#icon-heart"></use>
+          </svg>
+          <img
+            class="catalog-img"
+            srcset="/img/catalog/watch-2@2x.png 2x"
+            src="/img/catalog/watch-2.png"
+            alt="watch image"
+            width="276"
+            height="274"
+          />
+          <div class="catalog-overlay">
+            <h3 class="catalog-overlay-title">Description</h3>
+            <p class="catalog-overlay-text">
+              Richly detailed with an understated design - the Police Men’s
+              Greenlane watch.
+            </p>
+            <h3 class="catalog-overlay-title">Details & Features</h3>
+            <ul class="catalog-overlay-text">
+              <li>Gender: man</li>
+              <li>Size: 46x54.5mm</li>
+              <li>Case Colour: Steel Band</li>
+              <li>Material: Metal Case</li>
+              <li>Material: Metal</li>
+              <li>Features: Multifunction</li>
+              <li>Water Resistant: 5 (ATM)</li>
+              <li>Band Colour: Steel</li>
+            </ul>
+          </div>
+        </div>
+        <div class="catalog-content" data-aos="fade-up">
+          <p class="catalog-description mode-text">
+            Avondale Watch Police For Men
+          </p>
+          <span class="catalog-price mode-semi-tr">€800</span>
+        </div>
+      </li>
+      <li class="catalog-item">
+        <div class="catalog-thumb" data-aos="fade-left">
+          <svg class="catalog-heart">
+            <use href="./img/sprite.svg#icon-heart"></use>
+          </svg>
+          <img
+            class="catalog-img"
+            srcset="/img/catalog/watch-3@2x.png 2x"
+            src="/img/catalog/watch-3.png"
+            alt="watch image"
+            width="276"
+            height="274"
+          />
+          <div class="catalog-overlay">
+            <h3 class="catalog-overlay-title">Description</h3>
+            <p class="catalog-overlay-text">
+              Richly detailed with an understated design - the Police Men’s
+              Greenlane watch.
+            </p>
+            <h3 class="catalog-overlay-title">Details & Features</h3>
+            <ul class="catalog-overlay-text">
+              <li>Gender: man</li>
+              <li>Size: 46x54.5mm</li>
+              <li>Case Colour: Steel Band</li>
+              <li>Material: Metal Case</li>
+              <li>Material: Metal</li>
+              <li>Features: Multifunction</li>
+              <li>Water Resistant: 5 (ATM)</li>
+              <li>Band Colour: Steel</li>
+            </ul>
+          </div>
+        </div>
+        <div class="catalog-content" data-aos="fade-up">
+          <p class="catalog-description mode-text">
+            Diver 300M Co‑Axial Master Chronometer Chronograph
+          </p>
+          <span class="catalog-price mode-semi-tr">€600</span>
+        </div>
+      </li>
+      <li class="catalog-item">
+        <div class="catalog-thumb" data-aos="fade-left">
+          <svg class="catalog-heart">
+            <use href="./img/sprite.svg#icon-heart"></use>
+          </svg>
+          <img
+            class="catalog-img"
+            srcset="/img/catalog/watch-4@2x.png 2x"
+            src="/img/catalog/watch-4.png"
+            alt="watch image"
+            width="276"
+            height="274"
+          />
+          <div class="catalog-overlay">
+            <h3 class="catalog-overlay-title">Description</h3>
+            <p class="catalog-overlay-text">
+              Richly detailed with an understated design - the Police Men’s
+              Greenlane watch.
+            </p>
+            <h3 class="catalog-overlay-title">Details & Features</h3>
+            <ul class="catalog-overlay-text">
+              <li>Gender: man</li>
+              <li>Size: 46x54.5mm</li>
+              <li>Case Colour: Steel Band</li>
+              <li>Material: Metal Case</li>
+              <li>Material: Metal</li>
+              <li>Features: Multifunction</li>
+              <li>Water Resistant: 5 (ATM)</li>
+              <li>Band Colour: Steel</li>
+            </ul>
+          </div>
+        </div>
+        <div class="catalog-content" data-aos="fade-up">
+          <p class="catalog-description mode-text">
+            Diver 300M Co-Axial Master Chronometer
+          </p>
+          <span class="catalog-price mode-semi-tr">€1400</span>
+        </div>
+      </li>
+      <li class="catalog-item">
+        <div
+          class="catalog-thumb"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
+          <svg class="catalog-heart">
+            <use href="./img/sprite.svg#icon-heart"></use>
+          </svg>
+          <img
+            class="catalog-img"
+            srcset="/img/catalog/watch-5@2x.png 2x"
+            src="/img/catalog/watch-5.png"
+            alt="watch image"
+            width="276"
+            height="274"
+          />
+          <div class="catalog-overlay">
+            <h3 class="catalog-overlay-title">Description</h3>
+            <p class="catalog-overlay-text">
+              Richly detailed with an understated design - the Police Men’s
+              Greenlane watch.
+            </p>
+            <h3 class="catalog-overlay-title">Details & Features</h3>
+            <ul class="catalog-overlay-text">
+              <li>Gender: man</li>
+              <li>Size: 46x54.5mm</li>
+              <li>Case Colour: Steel Band</li>
+              <li>Material: Metal Case</li>
+              <li>Material: Metal</li>
+              <li>Features: Multifunction</li>
+              <li>Water Resistant: 5 (ATM)</li>
+              <li>Band Colour: Steel</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="catalog-content"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
+          <p class="catalog-description mode-text">
+            Taman Watch By Police For Men
+          </p>
+          <span class="catalog-price mode-semi-tr">€500</span>
+        </div>
+      </li>
+      <li class="catalog-item">
+        <div
+          class="catalog-thumb"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
+          <svg class="catalog-heart">
+            <use href="./img/sprite.svg#icon-heart"></use>
+          </svg>
+          <img
+            class="catalog-img"
+            srcset="/img/catalog/watch-6@2x.png 2x"
+            src="/img/catalog/watch-6.png"
+            alt="watch image"
+            width="276"
+            height="274"
+          />
+          <div class="catalog-overlay">
+            <h3 class="catalog-overlay-title">Description</h3>
+            <p class="catalog-overlay-text">
+              Richly detailed with an understated design - the Police Men’s
+              Greenlane watch.
+            </p>
+            <h3 class="catalog-overlay-title">Details & Features</h3>
+            <ul class="catalog-overlay-text">
+              <li>Gender: man</li>
+              <li>Size: 46x54.5mm</li>
+              <li>Case Colour: Steel Band</li>
+              <li>Material: Metal Case</li>
+              <li>Material: Metal</li>
+              <li>Features: Multifunction</li>
+              <li>Water Resistant: 5 (ATM)</li>
+              <li>Band Colour: Steel</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="catalog-content"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
+          <p class="catalog-description mode-text">
+            Malawi Watch Police For Men
+          </p>
+          <span class="catalog-price mode-semi-tr">€555</span>
+        </div>
+      </li>
+      <li class="catalog-item">
+        <div
+          class="catalog-thumb"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
+          <svg class="catalog-heart">
+            <use href="./img/sprite.svg#icon-heart"></use>
+          </svg>
+          <img
+            class="catalog-img"
+            srcset="/img/catalog/watch-7@2x.png 2x"
+            src="/img/catalog/watch-7.png"
+            alt="watch image"
+            width="276"
+            height="274"
+          />
+          <div class="catalog-overlay">
+            <h3 class="catalog-overlay-title">Description</h3>
+            <p class="catalog-overlay-text">
+              Richly detailed with an understated design - the Police Men’s
+              Greenlane watch.
+            </p>
+            <h3 class="catalog-overlay-title">Details & Features</h3>
+            <ul class="catalog-overlay-text">
+              <li>Gender: man</li>
+              <li>Size: 46x54.5mm</li>
+              <li>Case Colour: Steel Band</li>
+              <li>Material: Metal Case</li>
+              <li>Material: Metal</li>
+              <li>Features: Multifunction</li>
+              <li>Water Resistant: 5 (ATM)</li>
+              <li>Band Colour: Steel</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="catalog-content"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
+          <p class="catalog-description mode-text">
+            Diver 300M Co-Axial Master Chronometer
+          </p>
+          <span class="catalog-price mode-semi-tr">€1200</span>
+        </div>
+      </li>
+      <li class="catalog-item">
+        <div
+          class="catalog-thumb"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
+          <svg class="catalog-heart">
+            <use href="./img/sprite.svg#icon-heart"></use>
+          </svg>
+          <img
+            class="catalog-img"
+            srcset="/img/catalog/watch-8@2x.png 2x"
+            src="/img/catalog/watch-8.png"
+            alt="watch image"
+            width="276"
+            height="274"
+          />
+          <div class="catalog-overlay">
+            <h3 class="catalog-overlay-title">Description</h3>
+            <p class="catalog-overlay-text">
+              Richly detailed with an understated design - the Police Men’s
+              Greenlane watch.
+            </p>
+            <h3 class="catalog-overlay-title">Details & Features</h3>
+            <ul class="catalog-overlay-text">
+              <li>Gender: man</li>
+              <li>Size: 46x54.5mm</li>
+              <li>Case Colour: Steel Band</li>
+              <li>Material: Metal Case</li>
+              <li>Material: Metal</li>
+              <li>Features: Multifunction</li>
+              <li>Water Resistant: 5 (ATM)</li>
+              <li>Band Colour: Steel</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="catalog-content"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
+          <p class="catalog-description mode-text">
+            Greenlane Watch By Police For Men
+          </p>
+          <span class="catalog-price mode-semi-tr">€1000</span>
+        </div>
+      </li>
+      <li class="catalog-item">
+        <div
+          class="catalog-thumb"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
+          <svg class="catalog-heart">
+            <use href="./img/sprite.svg#icon-heart"></use>
+          </svg>
+          <img
+            class="catalog-img"
+            srcset="/img/catalog/watch-9@2x.png 2x"
+            src="/img/catalog/watch-9.png"
+            alt="watch image"
+            width="276"
+            height="274"
+          />
+          <div class="catalog-overlay">
+            <h3 class="catalog-overlay-title">Description</h3>
+            <p class="catalog-overlay-text">
+              Richly detailed with an understated design - the Police Men’s
+              Greenlane watch.
+            </p>
+            <h3 class="catalog-overlay-title">Details & Features</h3>
+            <ul class="catalog-overlay-text">
+              <li>Gender: man</li>
+              <li>Size: 46x54.5mm</li>
+              <li>Case Colour: Steel Band</li>
+              <li>Material: Metal Case</li>
+              <li>Material: Metal</li>
+              <li>Features: Multifunction</li>
+              <li>Water Resistant: 5 (ATM)</li>
+              <li>Band Colour: Steel</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="catalog-content"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <p class="catalog-description mode-text">Squardrc 5402 Chrono</p>
+          <span class="catalog-price mode-semi-tr">€359</span>
+        </div>
+      </li>
+      <li class="catalog-item">
+        <div
+          class="catalog-thumb"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
+          <svg class="catalog-heart">
+            <use href="./img/sprite.svg#icon-heart"></use>
+          </svg>
+          <img
+            class="catalog-img"
+            srcset="/img/catalog/watch-10@2x.png 2x"
+            src="/img/catalog/watch-10.png"
+            alt="watch image"
+            width="276"
+            height="274"
+          />
+          <div class="catalog-overlay">
+            <h3 class="catalog-overlay-title">Description</h3>
+            <p class="catalog-overlay-text">
+              Richly detailed with an understated design - the Police Men’s
+              Greenlane watch.
+            </p>
+            <h3 class="catalog-overlay-title">Details & Features</h3>
+            <ul class="catalog-overlay-text">
+              <li>Gender: man</li>
+              <li>Size: 46x54.5mm</li>
+              <li>Case Colour: Steel Band</li>
+              <li>Material: Metal Case</li>
+              <li>Material: Metal</li>
+              <li>Features: Multifunction</li>
+              <li>Water Resistant: 5 (ATM)</li>
+              <li>Band Colour: Steel</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="catalog-content"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <p class="catalog-description mode-text">
+            Diver 300M Co‑Axial Master Chronometer Chronograph
+          </p>
+          <span class="catalog-price mode-semi-tr">€400</span>
+        </div>
+      </li>
+      <li class="catalog-item">
+        <div
+          class="catalog-thumb"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
+          <svg class="catalog-heart">
+            <use href="./img/sprite.svg#icon-heart"></use>
+          </svg>
+          <img
+            class="catalog-img"
+            srcset="/img/catalog/watch-11@2x.png 2x"
+            src="/img/catalog/watch-11.png"
+            alt="watch image"
+            width="276"
+            height="274"
+          />
+          <div class="catalog-overlay">
+            <h3 class="catalog-overlay-title">Description</h3>
+            <p class="catalog-overlay-text">
+              Richly detailed with an understated design - the Police Men’s
+              Greenlane watch.
+            </p>
+            <h3 class="catalog-overlay-title">Details & Features</h3>
+            <ul class="catalog-overlay-text">
+              <li>Gender: man</li>
+              <li>Size: 46x54.5mm</li>
+              <li>Case Colour: Steel Band</li>
+              <li>Material: Metal Case</li>
+              <li>Material: Metal</li>
+              <li>Features: Multifunction</li>
+              <li>Water Resistant: 5 (ATM)</li>
+              <li>Band Colour: Steel</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="catalog-content"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <p class="catalog-description mode-text">Citizen</p>
+          <span class="catalog-price mode-semi-tr">€519</span>
+        </div>
+      </li>
+      <li class="catalog-item">
+        <div
+          class="catalog-thumb"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
+          <svg class="catalog-heart">
+            <use href="./img/sprite.svg#icon-heart"></use>
+          </svg>
+          <img
+            class="catalog-img"
+            srcset="/img/catalog/watch-12@2x.png 2x"
+            src="/img/catalog/watch-12.png"
+            alt="watch image"
+            width="276"
+            height="274"
+          />
+          <div class="catalog-overlay">
+            <h3 class="catalog-overlay-title">Description</h3>
+            <p class="catalog-overlay-text">
+              Richly detailed with an understated design - the Police Men’s
+              Greenlane watch.
+            </p>
+            <h3 class="catalog-overlay-title">Details & Features</h3>
+            <ul class="catalog-overlay-text">
+              <li>Gender: man</li>
+              <li>Size: 46x54.5mm</li>
+              <li>Case Colour: Steel Band</li>
+              <li>Material: Metal Case</li>
+              <li>Material: Metal</li>
+              <li>Features: Multifunction</li>
+              <li>Water Resistant: 5 (ATM)</li>
+              <li>Band Colour: Steel</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="catalog-content"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <p class="catalog-description mode-text">Armani Exchange</p>
+          <span class="catalog-price mode-semi-tr">€400</span>
+        </div>
+      </li>
+    </ul>
+    <div class="buy-wrap" data-aos="fade-up">
+      <button type="button" class="catalog-btn" disabled>Buy now</button>
+    </div>
+  </div>
+</section>
+
+      <section class="section new-watches mode-bg-secondary">
+  <div class="container">
+    <h2 class="new-watches-title mode-semi-tr" data-aos="fade-down">
+      New watches
+    </h2>
+    <h3 class="new-watches-subtitle title mode-title" data-aos="fade-down">
+      Green And Bronze—The Match Made In Heaven
+    </h3>
+    <ul class="new-watches-list list">
+      <li class="new-watches-item" data-aos="fade-down">
+        <picture>
+          <source
+            srcset="
+              ./img/new_watches/hand-watches-des.jpg,
+              ./img/new_watches/hand-watches-des-2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+
+          <source
+            srcset="
+              ./img/new_watches/hand-watches-tab.jpg,
+              ./img/new_watches/hand-watches-tab-2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+
+          <source
+            srcset="
+              ./img/new_watches/hand-watches.jpg,
+              ./img/new_watches/hand-watches-2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img src="./img/new_watches/hand-watches.jpg" alt="Hand watches" />
+        </picture>
+      </li>
+      <li class="new-watches-item" data-aos="fade-up">
+        <picture>
+          <source
+            srcset="
+              ./img/new_watches/watches-des.jpg,
+              ./img/new_watches/watches-des-2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+
+          <source
+            srcset="
+              ./img/new_watches/watches-tab.jpg,
+              ./img/new_watches/watches-tab-2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+
+          <source
+            srcset="
+              ./img/new_watches/watches.jpg,
+              ./img/new_watches/watches-2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+
+          <img src="./img/new_watches/watches.jpg" alt="Watches" />
+        </picture>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="section sale mode-bg" id="sale">
+  <div class="container sale-container-desktop">
+    <h2 class="sale-titel mode-title">Sale</h2>
+    <div class="sale-tabl-infor">
+      <div class="sale-gallery">
+        <ul class="cart-set">
+          <li class="sale-bg-img list" data-aos="fade-right">
+            <picture class="sale-watch-img">
+              <source
+                srcset="
+                  /img/sale/images/sale1/sale1-1x.png 1x,
+                  /img/sale/images/sale1/sale1-2x.png 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  /img/sale/images/sale1/sale1-tab-1x.png 1x,
+                  /img/sale/images/sale1/sale1-tab-2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  /img/sale/images/sale1/sale1-mobl-1x.png 1x,
+                  /img/sale/images/sale1/sale1-mobl-2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="/img/sale/images/sale1/sale1-mobl-1x.png"
+                alt="watch on hand"
+                width="80"
+              />
+            </picture>
+          </li>
+          <li
+            class="sale-bg-img list"
+            data-aos="fade-right"
+            data-aos-duration="1250"
+          >
+            <picture class="sale-watch-img">
+              <source
+                srcset="
+                  /img/sale/images/sale2/sale2-1x.png 1x,
+                  /img/sale/images/sale2/sale2-2x.png 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  /img/sale/images/sale2/sale2-tab-1x.png 1x,
+                  /img/sale/images/sale2/sale2-tab-2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  /img/sale/images/sale2/sale2-mobl-1x.png 1x,
+                  /img/sale/images/sale2/sale2-mobl-2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="/img/sale/images/sale2/sale2-mobl-1x.png"
+                alt="watch on hand"
+                width="80"
+              />
+            </picture>
+          </li>
+          <li
+            class="sale-bg-img list"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <picture class="sale-watch-img">
+              <source
+                srcset="
+                  /img/sale/images/sale3/sale3-1x.png 1x,
+                  /img/sale/images/sale3/sale3-2x.png 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  /img/sale/images/sale3/sale3-tab-1x.png 1x,
+                  /img/sale/images/sale3/sale3-tab-2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  /img/sale/images/sale3/sale3-mobl-1x.png 1x,
+                  /img/sale/images/sale3/sale3-mobl-2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="/img/sale/images/sale3/sale3-mobl-1x.png"
+                alt="watch on hand"
+                width="80"
+              />
+            </picture>
+          </li>
+          <li
+            class="sale-bg-img list"
+            data-aos="fade-right"
+            data-aos-duration="1750"
+          >
+            <picture class="sale-watch-img">
+              <source
+                srcset="
+                  /img/sale/images/sale4/sale4-1x.png 1x,
+                  /img/sale/images/sale4/sale4-2x.png 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  /img/sale/images/sale4/sale4-tab-1x.png 1x,
+                  /img/sale/images/sale4/sale4-tab-2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  /img/sale/images/sale4/sale4-mobl-1x.png 1x,
+                  /img/sale/images/sale4/sale4-mobl-2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="/img/sale/images/sale4/sale4-mobl-1x.png"
+                alt="watch on hand"
+                width="80"
+              />
+            </picture>
+          </li>
+        </ul>
+
+        <div class="sale-bg-img" data-aos="fade-down">
+          <picture class="sale-pictur-big">
+            <source
+              srcset="
+                /img/sale/images/big/sale-big-img1x.png 1x,
+                /img/sale/images/big/sale-big-img2x.png 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                /img/sale/images/big/sale-big-img-tab1x.png 1x,
+                /img/sale/images/big/sale-big-img-tab2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                /img/sale/images/big/sale-big-img-mobl1x.png 1x,
+                /img/sale/images/big/sale-big-img-mobl2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              src="/img/sale/images/big/sale-big-img-mobl1x.png"
+              alt="watch on hand"
+              width="235"
+            />
+          </picture>
+        </div>
+      </div>
+
+      <div class="sale-desktop-text">
+        <div data-aos="fade-left">
+          <h3 class="title-watch-name mode-text">
+            Greenlane Watch By Police For MenHT
+          </h3>
+          <p class="sale-producy mode-semi-tr">Product tag: PEWJK2227003</p>
+          <div class="price">
+            <div class="price-mrp">
+              <span class="value-sale mode-text">€700</span>
+              <span class="value-full-price mode-semi-tr">€1000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sale-description-functional" data-aos="fade-left">
+          <h4 class="sale-description mode-text">Description</h4>
+          <p class="description-functional psale mode-semi-tr">
+            Richly detailed with an understated design - the Police Men’s
+            Greenlane watch features a versatile multifunction design that fits
+            effortlessly into work and play. The steel case is adorned with a
+            semi-transparent black dial. The timepiece exhibits a contrast
+            through a black IP bracelet with matching crown and pushers.
+          </p>
+        </div>
+
+        <div class="sale-description-functional" data-aos="fade-left">
+          <h4 class="sale-description mode-text">DETAILS & FEATUREStion</h4>
+          <ul class="description-functional mode-semi-tr">
+            <li class="list">Gender: man</li>
+            <li class="list">Size: 46x54.5mm</li>
+            <li class="list">Case Colour: Steel</li>
+            <li class="list">Band Material: Metal</li>
+            <li class="list">Case Material: Metal</li>
+            <li class="list">Features: Multifunction</li>
+            <li class="list">Water Resistant: 5 (ATM)</li>
+            <li class="list">Band Colour: Steel</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     </main>
     <footer>
       <load ="partials/footer.html" />
