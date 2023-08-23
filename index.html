@@ -1114,9 +1114,107 @@
 </div>
     </footer>
 
-    <load ="partials/buy_now.html" />
-    <load ="partials/burger_menu.html" />
-    <load ="partials/scroll.html" />
+    <div class="modal-backdrop">
+  <div class="modal mode-bg">
+    <button
+      class="modal-close-btn"
+      type="button"
+      aria-label="Close modal window"
+    >
+      <svg class="modal-close-icon mode-icon">
+        <use href="/img/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal-column first-column"></div>
+    <div class="modal-column">
+      <form name="modal-form" class="modal-form">
+        <div class="form-field" role="group" aria-labelledby="full-name">
+          <label class="form-label mode-text" id="full-name">
+            Full name
+            <input
+              type="text"
+              name="name"
+              class="form-input mode-input"
+              placeholder="Enter your full name"
+              pattern="[A-Za-z]{2,20} [A-Za-z]{2,20}"
+              required
+            />
+          </label>
+        </div>
+        <div class="form-field" role="group" aria-labelledby="email">
+          <label class="form-label mode-text" id="email">
+            Email
+            <input
+              type="email"
+              name="email"
+              class="form-input mode-input"
+              placeholder="Enter your email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              required
+            />
+          </label>
+        </div>
+        <div class="form-field" role="group" aria-labelledby="card-number">
+          <label class="form-label mode-text" id="card-number">
+            Card number
+            <input
+              type="text"
+              name="card"
+              class="form-input mode-input"
+              placeholder="Enter card"
+              pattern="[0-9]{16}"
+              maxlength="16"
+              required
+            />
+          </label>
+        </div>
+        <div class="form-field" role="group" aria-labelledby="comments">
+          <label class="form-label mode-text" id="comments">
+            Comments
+            <textarea
+              name="comment"
+              class="form-input form-textarea mode-input"
+              placeholder="Enter your text"
+            ></textarea>
+          </label>
+        </div>
+        <button class="modal-btn" type="submit">submit</button>
+      </form>
+      <p class="catalog-price privacy-text mode-semi-tr">
+        By clicking on “Submit” button, you agree to our
+        <a href="#" class="privacy-link mode-semi-tr">Privacy Policy</a>, and
+        allow Promodo to use this information for marketing purposes.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- Burger menu -->
+    <div class="mobile-menu">
+  <div class="logo-header">
+    <img src="/img/logo.svg" alt="logo" class="svg-header" />
+    <p class="header-logo-text">thewatchspot</p>
+  </div>
+  <button aria-label="close modal window" class="menu-close-btn">
+    <svg class="menu-close-icon">
+      <use href="/img/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <ul class="menu-list">
+    <li class="menu-item">
+      <a href="#about-us" class="menu-link">About us</a>
+    </li>
+    <li class="menu-item"><a href="#catalog" class="menu-link">Catalog</a></li>
+    <li class="menu-item"><a href="#sale" class="menu-link">Sale</a></li>
+  </ul>
+</div>
+<!-- Scroll -->
+   <div class='scroll-to-top'>
+  <button aria-label="scroll up" class='btn-style btn btn-position' type='button'>
+    <svg class='scroll-icon' width='18' height='18'>
+      <use class='' href='/img/sprite.svg#icon-prev'></use>
+    </svg>
+  </button>
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
